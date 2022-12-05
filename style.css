@@ -7,18 +7,27 @@ main{
     max-width: 90%;
     margin: 0 auto;
 }
-.top-players{
+.top-players, .blogs{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     margin-top: 20px;
 }
-.player{
+.top-players{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+.player, .blog{
     display: flex;
     align-items: center;
 }
 .player img{
     height: 50px;
+    margin-right: 20px;
+}
+.thumbnail img{
+    width: 200px;
     margin-right: 20px;
 }
 
